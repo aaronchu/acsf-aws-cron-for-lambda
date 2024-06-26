@@ -20,7 +20,7 @@ Using the module:
 
 ```
 module "lambda_cron" {
-  source           = "git::https://github.com/aaronchu/acsf-aws-cron-for-lambda.git"
+  source           = "git::https://github.com/aaronchu/acsf-aws-cron-for-lambda.git?ref=v0.1.0"
   environment_name = var.environment_name
   cron_name        = "my-cron-for-my-lambda"
   cron_schedule    = "30 14-20 ? * MON-FRI *" # UTC
